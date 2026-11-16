@@ -1,0 +1,21 @@
+gunsnprices 0.1.2, copied unchanged from the npm package by tools/vendor.mjs.
+Tarball:   https://registry.npmjs.org/gunsnprices/-/gunsnprices-0.1.2.tgz
+Integrity: sha512-WJOL+XvHZoK+QppKVM3aNBk8tM2zhCj/IjcbXRfDpwqH7U3hGLolD3b0VvPFHj4oL4R87/yDXCdhlc/clRbuXQ==
+Source:    https://github.com/gunsnprices/gunsnprices-js
+
+Check: npm pack gunsnprices@0.1.2 && tar xzf gunsnprices-0.1.2.tgz
+       && diff -r package/src extension/vendor/gunsnprices/src
+
+SHA-256 of each file:
+2b7f95e92f6463e7e7f84f763c198ed4f10873894fe9c8a07c7c89c17d3bc138  vendor/gunsnprices/LICENSE
+722b84bde8b50170a944760cb0e9614746589d92227ce8a3f34d740ca5d73684  vendor/gunsnprices/LICENSE-DATA
+139ced7e50d342521f5d94d76acd6625c31b00a5c1af62a1b98b063aa8914694  vendor/gunsnprices/package.json
+91a2f8d7058b3e7e474b4ae579a5ffc492135a1888a5ab4279139a46a0ebf35c  vendor/gunsnprices/src/calibers.js
+45d5bfe8078517fc0b76be1b24ef6768a140bcde6cfcd1885f8d8b7f8e70e01a  vendor/gunsnprices/src/data/calibers.js
+26ceb9e628ab2e75bd479cc7b5c40073b40291ddc92bd8b90e4112b4fb92a9de  vendor/gunsnprices/src/data/entities.js
+f02bc4cb6511a5b8370589d663db303f4ae17e2f5ffdd75094235a84a1f66f3b  vendor/gunsnprices/src/data/models.js
+42c9cc2bb7215d125ac15aada2c88d1c8fab8acef2856cc34bd01e49efeaccc5  vendor/gunsnprices/src/index.js
+53e35d6f4ffb4c9c02b3c0e6b59e4887177a353a31ec5666f6e9f75f789e7162  vendor/gunsnprices/src/models.js
+0038b9e79da59d113bb1e57df286c904f989f80301c14700f0068855c763c290  vendor/gunsnprices/src/parse.js
+ab5a5e089829dcef872140f79fc9e82d9be5b06e5a57f5174cd4210d13dce996  vendor/gunsnprices/src/specs.js
+1210b9ad5dbc331a198105a66658e9ba28b0b5935cb63166112b8f9c3c158850  vendor/gunsnprices/src/util.js

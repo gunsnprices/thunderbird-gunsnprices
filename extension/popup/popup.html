@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <title>Gun &amp; ammo specs</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../icons/icon-32.png" width="20" height="20" alt="">
+    <h1>Gun &amp; ammo specs</h1>
+  </header>
+
+  <p id="status" role="status">Reading the message…</p>
+
+  <table id="items" hidden>
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Caliber</th>
+        <th scope="col">Specs</th>
+        <th scope="col" class="num">Qty</th>
+        <th scope="col" class="num">Price</th>
+        <th scope="col" class="num" title="Price divided by the rounds in the box">Per round</th>
+        <th scope="col"><span class="visually-hidden">Copy</span></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="actions" hidden>
+    <button type="button" id="copy-table">Copy table</button>
+    <span class="hint">Tab-separated, for a spreadsheet. "Copy" on a row copies its spec line.</span>
+  </div>
+
+  <p id="tip" class="hint" hidden>
+    Tip: select a product title in a message or in the editor, right-click it and choose
+    <b>Parse gun/ammo title</b>.
+  </p>
+
+  <footer>
+    Read on this computer; nothing is sent anywhere.
+    Parser and caliber data by
+    <a href="https://gunsnprices.com/developers" data-external>GunsNPrices</a>
+    (<a href="https://creativecommons.org/licenses/by/4.0/" data-external>CC BY 4.0</a>).
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

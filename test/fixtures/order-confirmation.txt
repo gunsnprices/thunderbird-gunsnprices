@@ -1,0 +1,25 @@
+Example Range Supply                                    Order #1042
+
+Thank you for your purchase!
+
+Hi Sam, we're getting your order ready to be shipped. We will notify you when it has been sent.
+
+Order summary
+--------------------------------------------------------------------
+
+Federal American Eagle 9mm Luger 115gr FMJ 50 Rounds × 4        $75.96
+Glock 19 Gen 5 MOS 9mm 4.02" 15rd Pistol PA195S203MOS × 1       $619.99
+CCI Mini-Mag 22 LR 40gr Copper-Plated Round Nose 100 Rounds × 2  $23.98
+Magpul PMAG 30 AR/M4 GEN M3 5.56x45 30rd Magazine × 1            $14.95
+
+Subtotal                                                       $734.88
+Shipping                                                        $12.00
+Taxes                                                            $0.00
+Total                                                      $746.88 USD
+
+Shipping address
+Sam Example
+1911 Elm St
+Springfield, IL 62701
+
+The firearm ships to your FFL dealer. If you have any questions, reply to this email.

@@ -1,0 +1,24 @@
+ORDER CONFIRMATION
+Order Number: 58213
+Date: 11/14/2026
+
+Item: Hornady Critical Defense 380 ACP 90gr FTX 25/Box
+SKU: 90080
+Price: $26.99
+Qty: 3
+Total: $80.97
+
+Item: Remington 870 Express 12 Gauge 28" Pump Shotgun
+MPN: R25569
+Price: $449.00
+Qty: 1
+Total: $449.00
+
+Item: Federal Premium 12 Gauge 2-3/4" 00 Buck 9 Pellets 5 Rounds
+Price: $7.49
+Qty: 10
+Total: $74.90
+
+Subtotal: $604.87
+Shipping: FREE
+Order Total: $604.87

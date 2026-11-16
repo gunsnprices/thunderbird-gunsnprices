@@ -1,0 +1,118 @@
+Content-Type: multipart/alternative; boundary="=_gunsnprices_sample_sample-order"
+MIME-Version: 1.0
+From: Example Range Supply <orders@example.com>
+To: Sam Example <sam@example.com>
+Subject: Order #1042 confirmed
+Date: Mon, 16 Nov 2026 10:00:00 -0600
+Message-ID: <sample-order@example.com>
+
+--=_gunsnprices_sample_sample-order
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Example Range Supply                                    Order #1042
+
+Thank you for your purchase!
+
+Hi Sam, we're getting your order ready to be shipped. We will notify you when it has been sent.
+
+Order summary
+--------------------------------------------------------------------
+
+Federal American Eagle 9mm Luger 115gr FMJ 50 Rounds × 4        $75.96
+Glock 19 Gen 5 MOS 9mm 4.02" 15rd Pistol PA195S203MOS × 1       $619.99
+CCI Mini-Mag 22 LR 40gr Copper-Plated Round Nose 100 Rounds × 2  $23.98
+Magpul PMAG 30 AR/M4 GEN M3 5.56x45 30rd Magazine × 1            $14.95
+
+Subtotal                                                       $734.88
+Shipping                                                        $12.00
+Taxes                                                            $0.00
+Total                                                      $746.88 USD
+
+Shipping address
+Sam Example
+1911 Elm St
+Springfield, IL 62701
+
+The firearm ships to your FFL dealer. If you have any questions, reply to this email.
+
+--=_gunsnprices_sample_sample-order
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Order #1042 confirmed</title>
+<style>
+  .order-list__item-title { font-weight: 600; }
+  .order-list__item-price { text-align: right; }
+</style>
+</head>
+<body>
+<span class="preheader" style="display: none !important; mso-hide: all">Thanks for your order! Your Glock 19 and 9mm ammo are being packed.&zwnj;&nbsp;&zwnj;&nbsp;</span>
+<table class="body" width="100%">
+  <tr>
+    <td>
+      <table class="header">
+        <tr>
+          <td><h1>Example Range Supply</h1></td>
+          <td align="right"><span>Order #1042</span></td>
+        </tr>
+      </table>
+      <h2>Thank you for your purchase!</h2>
+      <p>Hi Sam, we're getting your order ready to be shipped. We will notify you when it has been sent.</p>
+
+      <h3>Order summary</h3>
+      <table class="row">
+        <tr class="order-list__item">
+          <td><img src="https://cdn.example.com/federal-ae-9mm.jpg" alt="Federal American Eagle 9mm Luger 115gr FMJ 50 Rounds" width="60"></td>
+          <td>
+            <span class="order-list__item-title">Federal American Eagle 9mm Luger 115gr FMJ 50 Rounds&nbsp;&times;&nbsp;4</span><br>
+            <span class="order-list__item-variant">Default Title</span>
+          </td>
+          <td><p class="order-list__item-price">$75.96</p></td>
+        </tr>
+        <tr class="order-list__item">
+          <td><img src="https://cdn.example.com/glock-19.jpg" alt="" width="60"></td>
+          <td>
+            <span class="order-list__item-title">Glock 19 Gen 5 MOS 9mm 4.02&quot; 15rd Pistol PA195S203MOS&nbsp;&times;&nbsp;1</span>
+          </td>
+          <td><p class="order-list__item-price">$619.99</p></td>
+        </tr>
+        <tr class="order-list__item">
+          <td><img src="https://cdn.example.com/cci-minimag.jpg" alt="" width="60"></td>
+          <td>
+            <span class="order-list__item-title">CCI Mini-Mag 22 LR 40gr Copper-Plated Round Nose 100 Rounds&nbsp;&times;&nbsp;2</span>
+          </td>
+          <td><del>$31.98</del><p class="order-list__item-price">$23.98</p></td>
+        </tr>
+        <tr class="order-list__item">
+          <td><img src="https://cdn.example.com/pmag.jpg" alt="" width="60"></td>
+          <td>
+            <span class="order-list__item-title">Magpul PMAG 30 AR/M4 GEN M3 5.56x45 30rd Magazine&nbsp;&times;&nbsp;1</span>
+          </td>
+          <td><p class="order-list__item-price">$14.95</p></td>
+        </tr>
+      </table>
+
+      <table class="subtotal">
+        <tr><td>Subtotal</td><td>$734.88</td></tr>
+        <tr><td>Shipping</td><td>$12.00</td></tr>
+        <tr><td>Taxes</td><td>$0.00</td></tr>
+        <tr><td>Total</td><td><strong>$746.88 USD</strong></td></tr>
+      </table>
+
+      <h3>Shipping address</h3>
+      <p>Sam Example<br>1911 Elm St<br>Springfield, IL 62701</p>
+      <p>The firearm ships to your FFL dealer. If you have any questions, reply to this email.</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+--=_gunsnprices_sample_sample-order--

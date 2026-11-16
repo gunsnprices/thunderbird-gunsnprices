@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+  Development preview of the popup in an ordinary browser, with a mock of the Thunderbird API and a sample email
+  from test/fixtures/. Not part of the add-on.
+
+    python3 -m http.server 18765 --bind 127.0.0.1      (from the repository root)
+    http://127.0.0.1:18765/tools/preview/?fixture=newsletter.html&subject=Weekend%20Deals
+    http://127.0.0.1:18765/tools/preview/?selection=Glock%2019%20Gen5%20MOS%209mm%2015rd
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Popup preview</title>
+  <base href="/extension/popup/">
+</head>
+<body>
+<script type="module">
+  const params = new URLSearchParams(location.search);
+  const fixture = params.get("fixture") || "order-confirmation.html";
+
+  // the popup's markup and stylesheet, without its script
+  const page = await (await fetch("/extension/popup/popup.html")).text();
+  const doc = new DOMParser().parseFromString(page, "text/html");
+  for (const link of doc.querySelectorAll('link[rel="stylesheet"]')) document.head.append(link);
+  document.body.replaceChildren(...[...doc.body.children].filter((node) => node.tagName !== "SCRIPT"));
+
+  const content = await (await fetch(`/test/fixtures/${fixture}`)).text();
+  window.messenger = {
+    tabs: { query: async () => [{ id: 1 }] },
+    messageDisplay: {
+      getDisplayedMessages: async () => ({ messages: [{ id: 7, subject: params.get("subject") || "Order #1042 confirmed" }] }),
+    },
+    messages: {
+      listInlineTextParts: async () => [{ contentType: fixture.endsWith(".html") ? "text/html" : "text/plain", content }],
+    },
+    windows: { openDefaultBrowser: (url) => console.log("openDefaultBrowser", url) },
+  };
+  if (params.has("selection")) history.replaceState(null, "", "#selection=" + encodeURIComponent(params.get("selection")));
+  await import("/extension/popup/popup.js");
+  document.documentElement.dataset.ready = "1";
+</script>
+</body>
+</html>

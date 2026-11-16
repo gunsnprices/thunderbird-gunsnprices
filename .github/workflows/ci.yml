@@ -1,0 +1,36 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: npm ci
+
+      - name: Vendored parser is an unchanged copy of the npm package
+        run: npm run vendor && git diff --exit-code extension/vendor
+
+      - name: Unit tests
+        run: npm test
+
+      # addons.thunderbird.net validates uploads with addons-linter 6.15 (thunderbird/addons-server package.json).
+      # Expected warning: "messagesRead" is a Thunderbird permission that the Firefox schemas do not know.
+      - name: Lint with the addons-linter version ATN runs
+        run: npx --yes addons-linter@6.15.0 --boring --output text extension
+
+      # Current Firefox rules. Expected warnings: "messagesRead" (Thunderbird permission) and
+      # MISSING_DATA_COLLECTION_PERMISSIONS (a Firefox requirement; the feature is disabled in Thunderbird).
+      - name: Lint with web-ext
+        run: npx --yes web-ext@10.8.0 lint --source-dir extension --output text
+
+      - name: Build the .xpi
+        run: npm run build
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: gunsnprices-thunderbird-xpi
+          path: dist/*.xpi
